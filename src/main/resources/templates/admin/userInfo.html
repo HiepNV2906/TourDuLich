@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danh sách Tour</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/admin/plugins/fontawesome-free/css/all.min.css">
+  <!-- jsGrid -->
+  <link rel="stylesheet" href="/admin/plugins/jsgrid/jsgrid.min.css">
+  <link rel="stylesheet" href="/admin/plugins/jsgrid/jsgrid-theme.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/admin/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Book awesome</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="info">
+          <a href="#" class="d-block"><strong style="margin-right: 12px;">User:</strong>Alexander Pierce</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="/admin/userInfo" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Thông tin tài khoản
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/admin/userBooked" class="nav-link">
+              <i class="nav-icon fas fa-phone"></i>
+              <p>
+                Xem Tour đã đặt
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+
+      <button type="button" class="btn btn-block btn-warning" style="margin-top: 36px;">Đăng xuất</button>
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Thông tin tài khoản</h1>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+  
+      <!-- Main content -->
+      <section class="content">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Thông tin chung</h3>
+  
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="text-center">
+                  <img class="profile-user-img img-fluid img-circle" style="width: 150px; height: 150px;"
+                       src="https://0.soompi.io/wp-content/uploads/2021/12/21101646/Jin-6"
+                       alt="User profile picture" onerror="this.src = '/admin/dist/img/user-image.jpg'">
+                  
+                </div>
+
+                <h3 class="profile-username text-center">Nina Mcintire</h3>
+                <div class="form-group">
+                  <label for="inputName">Tài khoản</label>
+                  <input type="text" id="inputName" class="form-control" readonly value="AdminLTE">
+                </div>
+                <div class="form-group">
+                  <label for="inputClientCompany">Họ tên</label>
+                  <input type="text" id="inputClientCompany" class="form-control" value="Deveint Inc">
+                </div>
+                <div class="form-group">
+                  <label for="inputProjectLeader">Email</label>
+                  <input type="text" id="inputProjectLeader" class="form-control" value="abc@gmail.com">
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                    <a href="#" class="btn btn-secondary">Cancel</a>
+                    <input type="submit" value="Save Changes" class="btn btn-success float-right">
+                    </div>
+                </div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <div class="col-md-6">
+            <div class="card card-secondary">
+              <div class="card-header">
+                <h3 class="card-title">Đổi mật khẩu</h3>
+  
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="inputEstimatedBudget">Mật khẩu cũ</label>
+                  <input type="text" id="inputEstimatedBudget" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="inputSpentBudget">Mật khẩu mới</label>
+                  <input type="text" id="inputSpentBudget" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="inputEstimatedDuration">Nhập lại mật khẩu mới</label>
+                  <input type="text" id="inputEstimatedDuration" class="form-control">
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <a href="#" class="btn btn-secondary">Cancel</a>
+                    <input type="submit" value="Save Changes" class="btn btn-success float-right">
+                  </div>
+              </div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="/admin/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/admin/dist/js/adminlte.min.js"></script>
+<!-- jsGrid -->
+<script src="/admin/plugins/jsgrid/jsgrid.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danh sách Tour</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/admin/plugins/fontawesome-free/css/all.min.css">
+  <!-- jsGrid -->
+  <link rel="stylesheet" href="/admin/plugins/jsgrid/jsgrid.min.css">
+  <link rel="stylesheet" href="/admin/plugins/jsgrid/jsgrid-theme.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/admin/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Book awesome</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="info">
+          <a href="#" class="d-block"><strong style="margin-right: 12px;">User:</strong>Alexander Pierce</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="/admin/userInfo" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Thông tin tài khoản
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/admin/userBooked" class="nav-link">
+              <i class="nav-icon fas fa-phone"></i>
+              <p>
+                Xem Tour đã đặt
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+
+      <button type="button" class="btn btn-block btn-warning" style="margin-top: 36px;">Đăng xuất</button>
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1>Danh sách Tour đã đặt</h1>
+              </div>
+            </div>
+          </div><!-- /.container-fluid -->
+        </section>
+    
+        <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+    
+                <!-- Main content -->
+                <div class="invoice p-3 mb-3">
+                  <!-- info row -->
+                  <div class="row invoice-info">
+                    <div class="col-sm-4 invoice-col">
+                      <address>
+                        Tài khoản: <strong>Admin, Inc.</strong><br>
+                        Mã tài khoản: 1<br>
+                        Họ tên: Nguyễn Văn A<br>
+                        Email: abc@gmail.com
+                      </address>
+                    </div>
+                    <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+    
+                  <!-- Table row -->
+                  <div class="row">
+                    <div class="col-12 table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                        <tr>
+                          <th>Mã Tour</th>
+                          <th>Tên Tour</th>
+                          <th>Ngày đặt</th>
+                          <th>Giá/khách</th>
+                          <th>Số khách</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Du lịch Hà Nội - Chùa Tam Chúc - Ninh Bình - Tuyệt Tình Cốc - Chùa Bái Đính - Tràng An từ Sài Gòn</td>
+                          <td>28-03-2022</td>
+                          <td>6750000</td>
+                          <td>2</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+                <!-- /.invoice -->
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="/admin/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/admin/dist/js/adminlte.min.js"></script>
+<!-- jsGrid -->
+<script src="/admin/plugins/jsgrid/jsgrid.min.js"></script>
+
+</body>
+</html>

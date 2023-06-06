@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Forgot Password</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/admin/plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/admin/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="/admin/index2"><b>Book awesome</b></a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">Vui lòng nhập email đã đăng ký để lấy lại mật khẩu!</p>
+
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" required placeholder="Email">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <button type="submit" onclick="getPass()" class="btn btn-primary btn-block">Gửi yêu cầu</button>
+          </div>
+          <!-- /.col -->
+        </div>
+
+      <p class="check-mail" style="text-align: center;"></p>
+
+      <p class="mt-3 mb-1">
+        <a href="/admin/login">Về trang đăng nhập</a>
+      </p>
+      <p class="mb-0">
+        <a href="/admin/register" class="text-center">Đăng ký thành viên mới</a>
+      </p>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="/admin/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/admin/dist/js/adminlte.min.js"></script>
+<script>
+    function getPass(){
+        var email = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+        var t = document.querySelector(".form-control").value;
+        if(email.test(t)){
+            document.querySelector(".check-mail").innerHTML = `<span>Kiểm tra hộp thư đến để lấy lại mật khẩu</span>`;
+        }
+        else{
+            document.querySelector(".check-mail").innerHTML = `<span>Email không hợp lệ</span>`;
+        }
+    }
+    
+</script>
+</body>
+</html>
